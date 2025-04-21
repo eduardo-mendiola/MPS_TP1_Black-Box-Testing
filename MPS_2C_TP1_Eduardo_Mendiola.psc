@@ -9,9 +9,9 @@
 //*******************************************************************************************************************************************
 Algoritmo LoginConMenuYLibros
 	Definir user, pass Como Cadena;
-	Definir intentos, opcion, subopcion, DINARRAY, i Como Entero;
+	Definir intentos, DIMARRAY, opcion, subopcion, i Como Entero;
 	intentos = 3;
-	DINARRAY = 3;
+	DIMARRAY = 3;
 	
 	Definir userCorrecto, passCorrecta Como Cadena;
 	userCorrecto = "admin";
@@ -20,7 +20,7 @@ Algoritmo LoginConMenuYLibros
 	// Arreglos de libros
 	Definir lenguajes, bd, cienciaDatos Como Cadena;
 	
-	Dimension lenguajes[DINARRAY], bd[DINARRAY], cienciaDatos[DINARRAY];
+	Dimension lenguajes[DIMARRAY], bd[DIMARRAY], cienciaDatos[DIMARRAY];
 	
 	lenguajes[0] = "Clean Code - Robert C. Martin";
 	lenguajes[1] = "Effective Java - Joshua Bloch";
@@ -66,15 +66,15 @@ Algoritmo LoginConMenuYLibros
 						
 						Segun subopcion Hacer
 							1:
-								Para i = 0 Hasta DINARRAY - 1 Con Paso 1 Hacer
+								Para i = 0 Hasta DIMARRAY - 1 Con Paso 1 Hacer
 									Escribir lenguajes[i];
 								Fin Para
 							2:
-								Para i = 0 Hasta DINARRAY - 1 Con Paso 1 Hacer
+								Para i = 0 Hasta DIMARRAY - 1 Con Paso 1 Hacer
 									Escribir bd[i];
 								Fin Para
 							3:
-								Para i = 0 Hasta DINARRAY - 1 Con Paso 1 Hacer
+								Para i = 0 Hasta DIMARRAY - 1 Con Paso 1 Hacer
 									Escribir cienciaDatos[i];
 								Fin Para
 							De Otro Modo:
