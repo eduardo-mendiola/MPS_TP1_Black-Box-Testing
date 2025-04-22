@@ -1,11 +1,14 @@
 //*******************************************************************************************************************************************
-// Metodología de Pruebas de Sistemas 2do C
+// IFTS Nro 29 - TECNICATURA SUPERIOR EN DESARROLLO DE SOFTWARE
+// Metodología de Pruebas de Sistemas 2do 
 // Trabajo Práctico N°1
 
 // Profesor: Kevin Axel Del Bello
 // Alumno: Eduardo Ezequiel Mendiola
-// Fecha: 20-04-2025
-
+// Comisión: C
+// Fecha: 21-04-2025
+//*******************************************************************************************************************************************
+//                  Programa de login con menú de opciones para el analisis con pruebas de Caja Negra (black box testing)   
 //*******************************************************************************************************************************************
 Algoritmo LoginConMenuYLibros
 	Definir user, pass Como Cadena;
