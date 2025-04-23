@@ -13,16 +13,18 @@
 Algoritmo LoginConMenuYLibros
 	Definir user, pass Como Cadena;
 	Definir intentos, DIMARRAY, opcion, subopcion, i Como Entero;
+	Definir ingreso Como Logico;
+	
 	intentos = 3;
 	DIMARRAY = 3;
+	
+	ingreso = Falso;
 	
 	Definir userCorrecto, passCorrecta Como Cadena;
 	userCorrecto = "admin";
 	passCorrecta = "1234";
 	
-	// Arreglos de libros
 	Definir lenguajes, bd, cienciaDatos Como Cadena;
-	
 	Dimension lenguajes[DIMARRAY], bd[DIMARRAY], cienciaDatos[DIMARRAY];
 	
 	lenguajes[0] = "Clean Code - Robert C. Martin";
@@ -49,6 +51,7 @@ Algoritmo LoginConMenuYLibros
 		Leer pass;
 		
 		Si user = userCorrecto Y pass = passCorrecta Entonces
+			ingreso = Verdadero;
 			Escribir "¡Bienvenido ", user, "!";
 			
 			Repetir
@@ -99,7 +102,7 @@ Algoritmo LoginConMenuYLibros
 		
 	Hasta Que intentos = 0
 	
-	Si intentos = 0 Entonces
+	Si intentos = 0 Y ingreso = Falso Entonces
 		Escribir "No se pudo iniciar sesión. Intente más tarde.";
 	Fin Si
 	
